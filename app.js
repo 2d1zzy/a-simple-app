@@ -2,7 +2,7 @@ var main = function () {
     "use strict";
 
     $(".comment-input button").on("click", function (event){
-        var $new_comment = $("<p>");
+        var $new_comment;
 
         if ($(".comment-input input").val() !== ""){
             $new_comment = $("<p>").text($(".comment-input input").val());
