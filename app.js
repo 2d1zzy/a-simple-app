@@ -37,8 +37,10 @@ var main = function () {
 
 
       $("ul li:first-child").remove();
-
-$("footer").append($newParagraphElement);
+      $newUL.empty();
+      $("footer").fadeOut();
+      
+      $("footer").append($newParagraphElement);
 }
 
 $(document).ready(main);
