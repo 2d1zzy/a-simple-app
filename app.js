@@ -35,6 +35,9 @@ var main = function () {
       var $newParagraphElement = $("<p>");
       $newParagraphElement.text("this is a test paragraph")
 
+
+      $("ul li:first-child").remove();
+
 $("footer").append($newParagraphElement);
 }
 
