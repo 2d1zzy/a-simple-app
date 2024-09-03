@@ -23,6 +23,19 @@ var main = function () {
         }
       })
 
+      var $newUL = $("<ul>");
+      var $listItemOne = $("<li>").text("this is the first item on the list");
+      var $listItemTwo = $("<li>").text("this the second");
+
+      $newUL.append($listItemOne);
+      $newUL.append($listItemTwo);
+
+      $("main").append($newUL);
+
+      var $newParagraphElement = $("<p>");
+      $newParagraphElement.text("this is a test paragraph")
+
+$("footer").append($newParagraphElement);
 }
 
 $(document).ready(main);
