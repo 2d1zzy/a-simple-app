@@ -22,6 +22,14 @@ var main = function () {
             addCommentFromInputBox();
         }
       })
+      // This creates and hides our content as a div
+      var $content = $("<div>Hello World! Just Slide..</div>").hide();
+      
+      // append the content to the body element
+      $("body").append($content);
+
+      // Slide the content down for 5 seconds
+      $content.slideDown(5000);
 
       var $newUL = $("<ul>");
       var $listItemOne = $("<li>").text("this is the first item on the list");
